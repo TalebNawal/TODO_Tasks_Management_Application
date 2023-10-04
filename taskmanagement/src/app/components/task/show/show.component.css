@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4CAF50;
+  padding: 10px;
+  color: white;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.add-task {
+  margin-top: 20px;
+}
+
+.add-task .content {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-task form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-task mat-form-field {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.add-task mat-label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.add-task button[type="submit"] {
+  margin-top: 20px;
+}

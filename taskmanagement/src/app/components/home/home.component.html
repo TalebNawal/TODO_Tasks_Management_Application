@@ -1,0 +1,42 @@
+<div class="home">
+  <div class="header">
+    <h1>Dashboard</h1>
+    <div class="content">
+      <div class="total-task-chart">
+
+        <div>
+          <div>
+            <div class="chart-container">
+              <ng-container *ngIf="typeData.length > 0">
+                <canvas baseChart
+                [labels]="doughnutChartLabels"
+                [datasets]="doughnutChartDatasets"
+                [options]="doughnutChartOptions"
+                [legend]="true"
+                [type]="'doughnut'">
+        </canvas>    
+                  </ng-container>
+            </div>
+          </div>
+                  </div>
+                        
+                <div class="total-task">
+        </div>
+      </div>
+      <div>
+        <div *ngFor="let n of typeData" class="total-task-analytics">
+          <div class="display"></div>
+          <div>
+            <p class="data">{{ n.count }}</p>
+            <p class="data-type">{{ n.type }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div style="margin-top: 40px;">
+  <app-list (refreshEmitter)="refreshEmitter()"></app-list>
+</div>

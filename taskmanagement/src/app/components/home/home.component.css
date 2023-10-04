@@ -1,0 +1,84 @@
+.home {
+  padding: 40px;
+}
+
+.home .header h1,
+h1 {
+  font-weight: 500;
+}
+
+.content {
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.total-task-chart {
+  height: 100%;
+}
+
+.total-task-analytics {
+  display: flex;
+  align-items: flex-start;
+  margin: 15px 0 15px 0;
+}
+
+.total-task-analytics,
+.total-task .data {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.total-task-analytics:nth-child(1) .display {
+  background: var(--done-color);
+}
+
+.total-task-analytics:nth-child(2) .display {
+  background: var(--todo-color);
+}
+
+.total-task-analytics:nth-child(3) .display {
+  background: var(--pending-color);
+}
+
+.total-task-analytics .display {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  margin: 0 10px 0 10px;
+}
+
+.total-task-analytics .data-type {
+  font-size: 14px;
+  font-weight: 500;
+  color: #c3c5cd;
+}
+
+.total-task-chart .chart {
+  display: block;
+  width: 291px;
+  height: 237px;
+  margin-left: -106px;
+}
+
+.total-task-chart .chart {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin-left: -75px;
+}
+
+.total-task-chart .chart canvas {
+  width: 100px !important;
+  height: 100px !important;
+}
+
+.total-task {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-left: 12px;
+  text-align: center;
+}
